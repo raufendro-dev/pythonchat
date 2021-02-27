@@ -20,19 +20,19 @@ client_color = random.choice(colors)
 # server's IP address
 # if the server is not on this machine, 
 # put the private (network) IP address (e.g 192.168.1.2)
-ip = input("Enter Server IP: ")
+ip = input("Masukan IP Server: ")
 SERVER_HOST = ip
 SERVER_PORT = 5002 # server's port
 separator_token = "<SEP>" # we will use this to separate the client name & message
 
 # initialize TCP socket
 s = socket.socket()
-print(f"[*] Connecting to {SERVER_HOST}:{SERVER_PORT}...")
+print(f"[*] Menghubungkan ke {SERVER_HOST}:{SERVER_PORT}...")
 # connect to the server
 s.connect((SERVER_HOST, SERVER_PORT))
-print("[+] Connected.")
+print("[+] Terhubung.")
 # prompt the client for a name
-name = input("Enter your name: ")
+name = input("Masukan Namamu: ")
 
 def listen_for_messages():
     while True:
@@ -48,7 +48,7 @@ t.start()
 
 while True:
     # input message we want to send to the server
-    to_send =  input()
+    to_send =  input("Mau bicara apa? : ")
     # a way to exit the program
     if to_send.lower() == 'q':
         break
