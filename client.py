@@ -49,7 +49,7 @@ t.start()
 
 while True:
     # input message we want to send to the server
-    to_send =  input()
+    to_send =  input("=>")
     # a way to exit the program
     if to_send.lower() == 'q':
         break
