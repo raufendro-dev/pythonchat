@@ -21,9 +21,9 @@ client_color = random.choice(colors)
 # if the server is not on this machine, 
 # put the private (network) IP address (e.g 192.168.1.2)
 ip = input("Masukan IP Server: ")
-port = int(input("Masukan Port: "))
+#port = int(input("Masukan Port: "))
 SERVER_HOST = ip
-SERVER_PORT = port # server's port
+SERVER_PORT = 5002 # server's port
 separator_token = "<SEP>" # we will use this to separate the client name & message
 
 # initialize TCP socket
